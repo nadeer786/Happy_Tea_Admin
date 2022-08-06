@@ -1,195 +1,130 @@
-[![@coreui coreui](https://img.shields.io/badge/@coreui%20-coreui-lightgrey.svg?style=flat-square)](https://github.com/coreui/coreui)
-[![npm package][npm-coreui-badge]][npm-coreui]
-[![NPM downloads][npm-coreui-download]][npm-coreui]  
-[![@coreui react](https://img.shields.io/badge/@coreui%20-react-lightgrey.svg?style=flat-square)](https://github.com/coreui/react)
-[![npm package][npm-coreui-react-badge]][npm-coreui-react]
-[![NPM downloads][npm-coreui-react-download]][npm-coreui-react]  
+# Mantis Free React Material UI Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20Mantis%20React%20-%20The%20professional%20Material%20designed%20React%20Admin%20Dashboard%20Template%20&url=https://mantisdashboard.io&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
 
-[npm-coreui]: https://www.npmjs.com/package/@coreui/coreui
-[npm-coreui-badge]: https://img.shields.io/npm/v/@coreui/coreui.png?style=flat-square
-[npm-coreui-download]: https://img.shields.io/npm/dm/@coreui/coreui.svg?style=flat-square
-[npm-coreui-react]: https://www.npmjs.com/package/@coreui/react
-[npm-coreui-react-badge]: https://img.shields.io/npm/v/@coreui/react.png?style=flat-square
-[npm-coreui-react-download]: https://img.shields.io/npm/dm/@coreui/react.svg?style=flat-square
-[npm]: https://www.npmjs.com/package/@coreui/react
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/mantis-free-react-admin-template/blob/main/LICENSE)
+[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/mantis-free-react-admin-template)](https://github.com/codedthemes/mantis-free-react-admin-template/)
 
-# CoreUI Free React Admin Template v4
+Mantis is a free and open source React redux dashboard template made using the Material UI React component library with aim of flexibility and better customizability.
 
-CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
+### Name Derived From Nature
 
-## Table of Contents
+Mantis Logo is inspired from the insect name - 'Mantises' as they have triangular heads with flexible Necks. Also, the name is derived from two popular UI frameworks, Material UI and Ant Design (M-Ant-is).
 
-* [Versions](#versions)
-* [CoreUI Pro](#coreui-pro)
-* [Quick Start](#quick-start)
-* [Installation](#installation)
-* [Basic usage](#basic-usage)
-* [What's included](#whats-included)
-* [Documentation](#documentation)
-* [Versioning](#versioning)
-* [Creators](#creators)
-* [Community](#community)
-* [Support CoreUI Development](#support-coreui-development)
-* [Copyright and License](#copyright-and-license)
+Mantis has Ant Design principal on top of the MAterial UI React component library.
 
-## Versions
+:star: :star: :star: Support us by giving star (Top right of this page) if you like the theme :star: :star: :star:
 
-* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-* [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
-* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
-* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
+![mantis-free-react-dashboard-template.jpg](https://mantisdashboard.io/adv-banner-images/og-social.png)
 
-## CoreUI Pro
+The [Pro version](https://mantisdashboard.io) of Mantis react template includes features such as TypeScript, apps, authentication methods (i.e. JWT, Auth0, Firebase), advance components, form plugins, layouts, widgets, and more.
 
-* 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/product/angular-dashboard-template/)
-* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/product/bootstrap-dashboard-template/)
-* 💪  [CoreUI Pro React Admin Template](https://coreui.io/product/react-dashboard-template/)
-* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/product/vue-dashboard-template/)
+| [Mantis Free](https://mantisdashboard.io/free) | [Mantis Pro](https://mantisdashboard.io)                          |
+| ---------------------------------------------- | :---------------------------------------------------------------- |
+| **9** Demo pages                               | **130+** Demo pages                                               |
+| -                                              | ✓ Multi-language                                                  |
+| -                                              | ✓ Dark/Light Mode 🌓                                              |
+| -                                              | ✓ TypeScript version                                              |
+| -                                              | ✓ Design files (Figma)                                            |
+| -                                              | ✓ Multiple color options                                          |
+| -                                              | ✓ RTL                                                             |
+| -                                              | ✓ JWT, Firebase, Auth0, AWS authentication                        |
+| -                                              | ✓ [More components](https://mantisdashboard.io/dashboard/default) |
+| ✓ MIT License                                  | ✓ [Pro License](https://mui.com/store/license/)                   |
 
-## Quick Start
+## Why Mantis?
 
-- [Download the latest release](https://github.com/coreui/coreui-free-react-admin-template/archive/refs/heads/main.zip)
-- Clone the repo: `git clone https://github.com/coreui/coreui-free-react-admin-template.git`
+Mantis offers everything needed to build an advanced dashboard application. In the initial release, we included following high-end features,
 
-### Installation
+-   Professional user interface.
+-   Material UI React components.
+-   Fully responsive, all modern browser supported.
+-   Easy to use code structure
+-   Flexible & high-Performance code
+-   Simple documentation
 
-``` bash
-$ npm install
-```
+## Free Mantis React version
 
-or
+#### Preview
 
-``` bash
-$ yarn install
-```
+-   [Demo](https://mantisdashboard.io/free)
 
-### Basic usage
+#### Download
 
-``` bash
-# dev server with hot reload at http://localhost:3000
-$ npm start 
-```
+-   [Download from GitHub](https://github.com/codedthemes/mantis-free-react-admin-template)
 
-or 
+## Mantis Pro version
 
-``` bash
-# dev server with hot reload at http://localhost:3000
-$ yarn start
-```
+#### Preview
 
-Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
+-   [Demo](https://mantisdashboard.io)
 
-#### Build
+#### Purchase
 
-Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
+-   [Buy now](https://mui.com/store/items/mantis-react-admin-dashboard-template/)
 
-```bash
-# build for production with minification
-$ npm run build
-```
+## Table of contents
 
-or
+-   [Getting started](#getting-started)
+-   [Documentation](#documentation)
+-   [Technology stack](#technology-stack)
+-   [Author](#author)
+-   [Issues?](#issues)
+-   [License](#license)
+-   [More products](#more-free-react-material-admin-templates)
+-   [Follow us](#follow-us)
 
-```bash
-# build for production with minification
-$ yarn build
-```
+## Getting started
 
-## What's included
-
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+Clone from GitHub
 
 ```
-coreui-free-react-admin-template
-├── public/          # static files
-│   └── index.html   # html template
-│
-├── src/             # project root
-│   ├── assets/      # images, icons, etc.
-│   ├── components/  # common components - header, footer, sidebar, etc.
-│   ├── layouts/     # layout containers
-│   ├── scss/        # scss styles
-│   ├── views/       # application views
-│   ├── _nav.js      # sidebar navigation config
-│   ├── App.js
-│   ├── ...
-│   ├── index.js
-│   ├── routes.js    # routes config
-│   └── store.js     # template state example 
-│
-└── package.json
+git clone https://github.com/codedthemes/mantis-free-react-admin-template.git
+yarn
+yarn start
 ```
 
 ## Documentation
 
-The documentation for the CoreUI Admin Template is hosted at our website [CoreUI for React](https://coreui.io/react/)
+[Mantis documentation](https://codedthemes.gitbook.io/mantis-react/) helps you out in all aspects from Installation to deployment.
 
-## Versioning
+## Technology stack
 
-For transparency into our release cycle and in striving to maintain backward compatibility, CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+-   [Material UI V5](https://mui.com/core/)
+-   Built with React Hooks API.
+-   Redux & React context API for state management.
+-   Redux toolkit.
+-   React Router for navigation routing.
+-   Support for react-script.
+-   Code splitting.
+-   CSS-in-JS.
 
-See [the Releases section of our project](https://github.com/coreui/coreui-free-react-admin-template/releases) for changelogs for each release version.
+## Author
 
-## Creators
+Mantis is managed by team [CodedThemes](https://codedthemes.com).
 
-**Łukasz Holeczek**
-* <https://twitter.com/lukaszholeczek>
-* <https://github.com/mrholek>
-* <https://github.com/coreui>
+## Issues
 
-**CoreUI team**
-* https://github.com/orgs/coreui/people
+Please generate a [GitHub issue](https://github.com/codedthemes/mantis-free-react-admin-template/issues) if you found a bug in any version. We are try our best to resolve the issue.
 
-## Community
+## License
 
-Get updates on CoreUI's development and chat with the project maintainers and community members.
+-   Licensed under [MIT](https://github.com/codedthemes/datta-able-bootstrap-dashboard/blob/master/LICENSE)
 
-- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
-- Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
+## Checkout free React Material admin templates
 
-## Support CoreUI Development
+-   [Free Materially](https://codedthemes.com/item/materially-free-reactjs-admin-template/)
+-   [Free Berry](https://mui.com/store/items/berry-react-material-admin-free/)
 
-CoreUI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [CoreUI PRO](https://coreui.io/pricing/) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
+## Checkout premium React Material admin templates
 
-<!--- StartOpenCollectiveBackers -->
+-   [Materially](https://codedthemes.com/item/materially-reactjs-admin-dashboard/)
+-   [Berry](https://mui.com/store/items/berry-react-material-admin/)
 
-### Platinum Sponsors
+## Follow us
 
-Support this project by [becoming a Platinum Sponsor](https://opencollective.com/coreui/contribute/platinum-sponsor-40959/). A large company logo will be added here with a link to your website.
-
-<a href="https://opencollective.com/coreui/contribute/platinum-sponsor-40959/checkout"><img src="https://opencollective.com/coreui/tiers/platinum-sponsor/0/avatar.svg?avatarHeight=100"></a>
-
-### Gold Sponsors
-
-Support this project by [becoming a Gold Sponsor](https://opencollective.com/coreui/contribute/gold-sponsor-40960/). A big company logo will be added here with a link to your website.
-
-<a href="https://opencollective.com/coreui/contribute/gold-sponsor-40960/checkout"><img src="https://opencollective.com/coreui/tiers/gold-sponsor/0/avatar.svg?avatarHeight=100"></a> 
-
-### Silver Sponsors
-
-Support this project by [becoming a Silver Sponsor](https://opencollective.com/coreui/contribute/silver-sponsor-40967/). A medium company logo will be added here with a link to your website.
-
-<a href="https://opencollective.com/coreui/contribute/silver-sponsor-40967/checkout"><img src="https://opencollective.com/coreui/tiers/gold-sponsor/0/avatar.svg?avatarHeight=100"></a>
-
-### Bronze Sponsors
-
-Support this project by [becoming a Bronze Sponsor](https://opencollective.com/coreui/contribute/bronze-sponsor-40966/). The company avatar will show up here with a link to your OpenCollective Profile.
-
-<a href="https://opencollective.com/coreui/contribute/bronze-sponsor-40966/checkout"><img src="https://opencollective.com/coreui/tiers/bronze-sponsor/0/avatar.svg?avatarHeight=100"></a> 
-
-### Backers
-
-Thanks to all the backers and sponsors! Support this project by [becoming a backer](https://opencollective.com/coreui/contribute/backer-40965/).
-
-<a href="https://opencollective.com/coreui/contribute/backer-40965/checkout" target="_blank" rel="noopener"><img src="https://opencollective.com/coreui/backers.svg?width=890"></a>
-
-<!--- EndOpenCollectiveBackers -->
-
-## Copyright and License
-
-copyright 2022 creativeLabs Łukasz Holeczek.   
-
- 
-Code released under [the MIT license](https://github.com/coreui/coreui-free-react-admin-template/blob/master/LICENSE).
-There is only one limitation you can't can’t re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI. In past we faced some problems with persons who tried to sell CoreUI based templates.
-
+-   Website [https://mantisdashboard.io](https://mantisdashboard.io)
+-   Blog [https://blog.mantisdashboard.io](https://blog.mantisdashboard.io)
+-   CodedThemes [https://codedthemes.com](https://codedthemes.com)
+-   Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
+-   Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
+-   Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
