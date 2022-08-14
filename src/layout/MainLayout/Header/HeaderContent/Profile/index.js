@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useRef, useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -24,6 +25,7 @@ import MainCard from 'components/MainCard';
 import Transitions from 'components/@extended/Transitions';
 import ProfileTab from './ProfileTab';
 import SettingTab from './SettingTab';
+import { logout } from 'store/reducers/auth/authSlice';
 
 // assets
 import avatar1 from 'assets/images/users/avatar-1.png';
@@ -55,9 +57,10 @@ function a11yProps(index) {
 
 const Profile = () => {
     const theme = useTheme();
+    const dispatch = useDispatch();
 
     const handleLogout = async () => {
-        // logout
+        await dispatch(logout());
     };
 
     const anchorRef = useRef(null);
@@ -158,13 +161,13 @@ const Profile = () => {
                                         {open && (
                                             <>
                                                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                                                    <Tabs
+                                                    {/* <Tabs
                                                         variant="fullWidth"
                                                         value={value}
                                                         onChange={handleChange}
                                                         aria-label="profile tabs"
-                                                    >
-                                                        <Tab
+                                                    > */}
+                                                    {/* <Tab
                                                             sx={{
                                                                 display: 'flex',
                                                                 flexDirection: 'row',
@@ -175,8 +178,8 @@ const Profile = () => {
                                                             icon={<UserOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
                                                             label="Profile"
                                                             {...a11yProps(0)}
-                                                        />
-                                                        <Tab
+                                                        /> */}
+                                                    {/* <Tab
                                                             sx={{
                                                                 display: 'flex',
                                                                 flexDirection: 'row',
@@ -187,15 +190,15 @@ const Profile = () => {
                                                             icon={<SettingOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
                                                             label="Setting"
                                                             {...a11yProps(1)}
-                                                        />
-                                                    </Tabs>
+                                                        /> */}
+                                                    {/* </Tabs> */}
                                                 </Box>
                                                 <TabPanel value={value} index={0} dir={theme.direction}>
                                                     <ProfileTab handleLogout={handleLogout} />
                                                 </TabPanel>
-                                                <TabPanel value={value} index={1} dir={theme.direction}>
+                                                {/* <TabPanel value={value} index={1} dir={theme.direction}>
                                                     <SettingTab />
-                                                </TabPanel>
+                                                </TabPanel> */}
                                             </>
                                         )}
                                     </MainCard>

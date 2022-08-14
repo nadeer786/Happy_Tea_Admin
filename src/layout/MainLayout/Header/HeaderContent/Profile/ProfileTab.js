@@ -7,20 +7,23 @@ import { List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 
 // assets
 import { EditOutlined, ProfileOutlined, LogoutOutlined, UserOutlined, WalletOutlined } from '@ant-design/icons';
+import { useDispatch } from 'react-redux';
+import { logout } from 'store/reducers/auth/authSlice';
 
 // ==============================|| HEADER PROFILE - PROFILE TAB ||============================== //
 
 const ProfileTab = ({ handleLogout }) => {
     const theme = useTheme();
+    const dispatch = useDispatch();
 
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const handleListItemClick = (event, index) => {
-        setSelectedIndex(index);
-    };
+    // const handleListItemClick = (event, index) => {
+    //     setSelectedIndex(index);
+    // };
 
     return (
         <List component="nav" sx={{ p: 0, '& .MuiListItemIcon-root': { minWidth: 32, color: theme.palette.grey[500] } }}>
-            <ListItemButton selected={selectedIndex === 0} onClick={(event) => handleListItemClick(event, 0)}>
+            {/* <ListItemButton selected={selectedIndex === 0} onClick={(event) => handleListItemClick(event, 0)}>
                 <ListItemIcon>
                     <EditOutlined />
                 </ListItemIcon>
@@ -44,7 +47,7 @@ const ProfileTab = ({ handleLogout }) => {
                     <WalletOutlined />
                 </ListItemIcon>
                 <ListItemText primary="Billing" />
-            </ListItemButton>
+            </ListItemButton> */}
             <ListItemButton selected={selectedIndex === 2} onClick={handleLogout}>
                 <ListItemIcon>
                     <LogoutOutlined />

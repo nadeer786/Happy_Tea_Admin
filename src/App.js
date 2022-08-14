@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Route, useNavigate } from 'react-router-dom';
 // project import
 // import Routes from 'routes';
 import ThemeCustomization from 'themes';
@@ -8,6 +8,9 @@ import MainRoutes from 'routes/MainRoutes';
 import DashboardDefault from 'pages/dashboard/index';
 import MainLayout from 'layout/MainLayout/index';
 import { useEffect } from 'react';
+import ThemeRoutes from 'routes/index';
+
+// import Routes from './routes';
 
 // ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
 
@@ -28,10 +31,11 @@ const App = () => {
     return (
         <ThemeCustomization>
             <ScrollTop>
-                <Routes>
+                {/* <Routes>
                     <Route exact path="/" element={<Login />} />
                 </Routes>
-                <MainRoutes />
+                <MainRoutes /> */}
+                <ThemeRoutes />
             </ScrollTop>
         </ThemeCustomization>
     );

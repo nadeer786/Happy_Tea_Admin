@@ -34,7 +34,7 @@ import { logout } from 'store/reducers/auth/authSlice';
 
 // Default config options
 const defaultOptions = {
-    baseURL: `${BASE_URL}/api/v1`,
+    baseURL: `${BASE_URL}/api`,
     headers: {
         'Content-Type': 'application/json'
     }
