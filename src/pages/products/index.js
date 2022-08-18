@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 // material-ui
 import {
@@ -17,8 +19,18 @@ import {
     TextField,
     Typography
 } from '@mui/material';
-import ProductsList from './productsList';
+import ProductsList from './ProductsList';
+
+// Store imports
+import { getProducts } from 'store/reducers/product/productService';
+import { getAllCategories } from 'store/reducers/category/categoryService';
+
 const Products = () => {
+    const dispatch = useDispatch();
+
+    // useEffect(() => {
+    //     getProducts(dispatch);
+    // }, [dispatch]);
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
             <Grid item xs={12} sx={{ mb: -2.25 }}>

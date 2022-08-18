@@ -4,11 +4,12 @@ import dashboard from './dashboard';
 import utilities from './utilities';
 import support from './support';
 import products from './products';
+import settings from './settings';
 
 // ==============================|| MENU ITEMS ||============================== //
 
 const menuItems = {
-    items: [dashboard, products]
+    items: [dashboard, products, settings]
 };
 
 export default menuItems;
