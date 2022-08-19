@@ -15,6 +15,7 @@ const Product = Loadable(lazy(() => import('../pages/products/index')));
 const AddProduct = Loadable(lazy(() => import('../pages/products/AddProduct')));
 const EditProduct = Loadable(lazy(() => import('../pages/products/EditProduct')));
 const Settings = Loadable(lazy(() => import('../pages/settings/index')));
+const Cafeteria = Loadable(lazy(() => import('../pages/cafeteria/index')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -50,6 +51,10 @@ const MainRoutes = {
         {
             path: 'settings',
             element: <Settings />
+        },
+        {
+            path: 'cafeteria',
+            element: <Cafeteria />
         }
     ]
 };

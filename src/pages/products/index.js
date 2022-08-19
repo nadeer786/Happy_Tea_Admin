@@ -19,7 +19,7 @@ import {
     TextField,
     Typography
 } from '@mui/material';
-import ProductsList from './ProductsList';
+import ProductsList from './productsList';
 
 // Store imports
 import { getProducts } from 'store/reducers/product/productService';
