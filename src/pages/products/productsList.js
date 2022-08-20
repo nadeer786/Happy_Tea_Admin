@@ -26,9 +26,6 @@ const ProductsList = () => {
     // Edit Product
     const handleEditProduct = (product) => {
         navigate(`/dashboard/products/edit/${product}`);
-        if (product) {
-            getProductById(dispatch, product);
-        }
     };
 
     // DataGrid columns definition

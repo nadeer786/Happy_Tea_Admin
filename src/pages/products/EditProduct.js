@@ -114,9 +114,9 @@ const EditProduct = () => {
     useEffect(() => {
         getAllCategories(dispatch);
         getAllCafeterias(dispatch);
-        if (params.productId) {
-            getProductById(dispatch, params.productId);
-        }
+        // if (params.productId) {
+        getProductById(params.productId, dispatch);
+        // }
     }, [dispatch, params.productId]);
     // useEffect(() => {
     //     getProductById(dispatch, params.productId);
@@ -125,14 +125,15 @@ const EditProduct = () => {
         <MainCard title="Add Product">
             <Formik
                 initialValues={{
-                    name: product ? product.name : '',
-                    category: product ? product.category : '',
-                    price: product ? product.price : '',
-                    description: product ? product.description : '',
-                    offerPrice: product ? product.offerPrice : '',
-                    cafeteria: product ? product.cafeteria : '',
+                    name: product.name,
+                    category: product.category,
+                    price: product.price,
+                    description: product.description,
+                    offerPrice: product.offerPrice,
+                    cafeteria: product.cafeteria,
                     submit: null
                 }}
+                enableReinitialize={true}
                 validationSchema={Yup.object().shape({
                     name: Yup.string().max(255).required('Email is required'),
                     category: Yup.string().max(255).required('Password is required'),
@@ -145,8 +146,9 @@ const EditProduct = () => {
                         console.log('values', values);
                         const data = { ...values, image: imageUrl, imageKey: imageName };
                         console.log('data', data);
-                        await addProduct(data, dispatch);
-                        await getProducts(dispatch);
+                        // await addProduct(data, dispatch);
+                        // await getProducts(dispatch);
+                        // console.log('values', data);
                         if (isFetching === false) {
                             navigate('/dashboard/products');
                         }

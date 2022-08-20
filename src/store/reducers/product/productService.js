@@ -27,7 +27,7 @@ export const getProducts = async (dispatch) => {
     }
 };
 // Get Product By Id
-export const getProductById = async (dispatch, id) => {
+export const getProductById = async (id, dispatch) => {
     dispatch(getProductByIdStart());
     try {
         const res = await API_URL.get(`/product/${id}`);
