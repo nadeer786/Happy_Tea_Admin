@@ -47,15 +47,16 @@ export const getProductById = async (id, dispatch) => {
 //     }
 // };
 
-// export const updateProduct = async (id, product, dispatch) => {
-//     dispatch(updateProductStart());
-//     try {
-//         // update
-//         dispatch(updateProductSuccess({ id, product }));
-//     } catch (err) {
-//         dispatch(updateProductFailure());
-//     }
-// };
+export const updateProduct = async (id, product, dispatch) => {
+    dispatch(updateProductStart());
+    try {
+        // update
+        const res = await API_URL.put(`/product/${id}`, product);
+        dispatch(updateProductSuccess(res.data.data));
+    } catch (err) {
+        dispatch(updateProductFailure());
+    }
+};
 export const addProduct = async (product, dispatch) => {
     dispatch(addProductStart());
     try {

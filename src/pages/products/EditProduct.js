@@ -41,7 +41,7 @@ import {
 import MainCard from 'components/MainCard';
 import { getAllCategories } from 'store/reducers/category/categoryService';
 import { getAllCafeterias } from 'store/reducers/cafeteria/cafeteriaService';
-import { addProduct, getProductById, getProducts } from 'store/reducers/product/productService';
+import { addProduct, getProductById, getProducts, updateProduct } from 'store/reducers/product/productService';
 // import { toast } from 'react-toastify';
 // ==============================|| ADD NEW PRODUCT OR EDIT A PRODUCT PAGE||============================== //
 const EditProduct = () => {
@@ -56,7 +56,8 @@ const EditProduct = () => {
 
     // Firebase Storage Reference for images upload and download url
     const [file, setFile] = useState(null);
-    const [imageUrl, setImageUrl] = useState(null);
+    const [imageUrl, setImageUrl] = useState(product.image);
+    console.log('imageUrl', imageUrl);
     const [imageName, setImageName] = useState(null);
     console.log('imageUrl', imageUrl);
     console.log('imageName', imageName);
@@ -99,7 +100,7 @@ const EditProduct = () => {
     // Delete image from firebase storage
     const handleDeleteImage = () => {
         const storage = getStorage(app);
-        const storageRef = ref(storage, imageName);
+        const storageRef = ref(storage, product.imageKey);
         deleteObject(storageRef)
             .then(() => {
                 setImageUrl(null);
@@ -131,6 +132,7 @@ const EditProduct = () => {
                     description: product.description,
                     offerPrice: product.offerPrice,
                     cafeteria: product.cafeteria,
+                    image: imageUrl,
                     submit: null
                 }}
                 enableReinitialize={true}
@@ -145,10 +147,8 @@ const EditProduct = () => {
                         setStatus({ success: true }), setSubmitting(false);
                         console.log('values', values);
                         const data = { ...values, image: imageUrl, imageKey: imageName };
-                        console.log('data', data);
-                        // await addProduct(data, dispatch);
-                        // await getProducts(dispatch);
-                        // console.log('values', data);
+                        await updateProduct(params.productId, data, dispatch);
+                        await getProducts(dispatch);
                         if (isFetching === false) {
                             navigate('/dashboard/products');
                         }
@@ -304,7 +304,7 @@ const EditProduct = () => {
                                                 </Button>
                                             </Stack>
                                         </Grid>
-                                        {imageUrl && (
+                                        {product.image && (
                                             <Grid sx={{ mt: 2 }}>
                                                 <Box sx={{ position: 'relative' }}>
                                                     <img
@@ -331,7 +331,7 @@ const EditProduct = () => {
                         </Grid>
                         <Grid sx={{ mt: 2, display: 'flex', justifyContent: 'end' }}>
                             <Button type="submit" variant="contained" color="primary">
-                                {isSubmitting ? 'Creating...' : 'Create Product'}
+                                {isSubmitting ? 'Updating...' : 'Update Product'}
                             </Button>
                         </Grid>
                     </form>
